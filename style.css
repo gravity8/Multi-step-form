@@ -186,7 +186,7 @@ a{
         border-radius: 10px;
         width: 342px;
         height: 378px;
-        inset: -9vh 0 0 0;
+        inset: 0 0 0 0;
         margin: auto auto;
         padding-inline:2rem;
     }
