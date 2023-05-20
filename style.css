@@ -143,7 +143,7 @@ a{
 .error-Message{
     display:none;
 }
-@media(width<=470px){
+@media(max-width:470px){
     body{
         height: 100vh;
         background-color:#fff;
