@@ -8,32 +8,32 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="(()=>{toggle1.classList.add('active');})()">
     <div class="card-body">
         <div class="aside">
             <div class="step">
-                <a href="#" class="active">1</a>
+                <a href="#" class="active step1">1</a>
                 <div class="step-info">
                     <p>step 1</p>
                     <h1>Your info</h1>
                 </div>
             </div>
             <div class="step">
-                <a href="#">2</a>
+                <a href="#" class="step2">2</a>
                 <div class="step-info">
                     <p>step 2</p>
                     <h1>Select plan</h1>
                 </div>
             </div>
             <div class="step">
-                <a href="#">3</a>
+                <a href="#" class="step3">3</a>
                 <div class="step-info">
                     <p>step 3</p>
                     <h1>add-ons</h1>
                 </div>
             </div>
             <div class="step">
-                <a href="#">4</a>
+                <a href="#" class="step4">4</a>
                 <div class="step-info">
                     <p>step 4</p>
                     <h1>summary</h1>
@@ -42,8 +42,8 @@
         </div>
         <div class="form-space">
             <div class="first-step">
-                <h1>Personal info</h1>
-                <p>Please provide your name, email address, and phone number.</p>
+                <h1 class="HeaderText">Personal info</h1>
+                <p class="paragraphText">Please provide your name, email address, and phone number.</p>
                 <form action="" class="form-control">
                     <label for="name" >Name</label><span class="error-Message">This field is required</span><br>
                     <input type="text" class="name" placeholder="e.g. Stephen King"><br>
@@ -51,8 +51,18 @@
                     <input type="email" class="email" placeholder="e.g. stephenking@lorem.com"><br>
                     <label for="phone-no">Phone Number</label><span class="error-Message">This field is required</span><br>
                     <input type="text" class="phoneNo" inputmode="numeric" pattern="[0-9+]+" placeholder="e.g. +1 234 567 890" maxlength="14"><br>
-                    <button type="submit">Next Step</button>
+                    <button class="submit-form" type="submit">Next Step</button>
                 </form>
+            </div>
+            <div class="second-step">
+                <a class="goback">Go Back</a>
+                <button id='submit-form' class="submit-form">Next Step</button>
+            </div>
+            <div class="third-step">
+            </div>
+            <div class="fourth-step">
+            </div>
+            <div class="fifth-step">
             </div>
         </div>
     </div>

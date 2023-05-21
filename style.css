@@ -77,6 +77,7 @@ a{
 .form-space{
     position: relative;
 }
+
 .form-space .first-step h1{
     color: var(--primary-text);
     margin-top: 2rem;
@@ -87,6 +88,9 @@ a{
     color:hsl(231, 11%, 63%);
     margin-bottom: 2.5rem;
 
+}
+.form-space .first-step form{
+    width: 442px;
 }
 .form-space .first-step form label{
     position: relative;
@@ -123,7 +127,7 @@ a{
 .form-space .first-step form input:hover{
     cursor: pointer;
 }
-.form-space .first-step form button{
+.submit-form{
     position: absolute;
     right: 0;
     bottom: 3%;
@@ -137,11 +141,25 @@ a{
     font-size: 1rem;
     cursor: pointer;
 }
-.form-space .first-step form button:hover{
+.submit-form:hover{
     background-color: hsl(213, 92%, 29%); 
 }
 .error-Message{
     display:none;
+}
+.second-step{
+    width: 442px;
+}
+.second-step .goback{
+    display: none;
+    color:hsl(231, 11%, 63%);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 6%;
+}
+.second-step .goback:hover{
+    color: hsl(213, 92%, 29%);
 }
 @media(max-width:470px){
     body{
@@ -194,13 +212,16 @@ a{
         margin-bottom: 1rem;
     
     }
+    .form-space .first-step form{
+        width: 100%;
+    }
     .form-space .first-step form input{
         margin-bottom: .5rem;
         height: 40px;
         padding-inline: 1rem;
     }
-    .form-space .first-step form button{
-        bottom: -30vh;
+    .submit-form{
+        bottom: -25vh;
     }
     .form-space .first-step form span{
         position:absolute;
@@ -211,5 +232,8 @@ a{
         font-weight: 500;
         color: hsl(354, 84%, 57%);
     }
-    
+    .second-step .goback{
+        left: 0;
+        bottom: -28vh;;
+    }
 }
