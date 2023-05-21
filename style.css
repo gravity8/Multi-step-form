@@ -221,7 +221,7 @@ a{
         padding-inline: 1rem;
     }
     .submit-form{
-        bottom: -25vh;
+        bottom: -26vh;
     }
     .form-space .first-step form span{
         position:absolute;
@@ -234,6 +234,6 @@ a{
     }
     .second-step .goback{
         left: 0;
-        bottom: -28vh;;
+        bottom: -24vh;;
     }
 }
