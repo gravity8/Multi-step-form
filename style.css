@@ -367,6 +367,9 @@ a{
         position: absolute;
         bottom:-11.6vh;
     }
+    .second-step .diffArea p{
+        margin-bottom: 1.5rem;
+    }
     .yearly-goback{
         bottom: -11.6vh !important;
     }
