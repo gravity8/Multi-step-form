@@ -44,19 +44,82 @@
             <div class="first-step">
                 <h1 class="HeaderText">Personal info</h1>
                 <p class="paragraphText">Please provide your name, email address, and phone number.</p>
-                <form action="" class="form-control">
+                <form action="" onsubmit="" class="form-control">
                     <label for="name" >Name</label><span class="error-Message">This field is required</span><br>
-                    <input type="text" class="name" placeholder="e.g. Stephen King"><br>
+                    <input type="text" value="david" class="name" placeholder="e.g. Stephen King"><br>
                     <label for="email" >Email Address</label><span class="error-Message">This field is required</span><br>
-                    <input type="email" class="email" placeholder="e.g. stephenking@lorem.com"><br>
+                    <input type="email" value="a@gmail.com" class="email" placeholder="e.g. stephenking@lorem.com"><br>
                     <label for="phone-no">Phone Number</label><span class="error-Message">This field is required</span><br>
-                    <input type="text" class="phoneNo" inputmode="numeric" pattern="[0-9+]+" placeholder="e.g. +1 234 567 890" maxlength="14"><br>
+                    <input type="text" value=82024809282 class="phoneNo" inputmode="numeric" pattern="[0-9+]+" placeholder="e.g. +1 234 567 890" maxlength="14"><br>
                     <button class="submit-form" type="submit">Next Step</button>
                 </form>
             </div>
             <div class="second-step">
-                <a class="goback">Go Back</a>
-                <button id='submit-form' class="submit-form">Next Step</button>
+                <div class="diffArea">
+                    <h1 class="HeaderText"></h1>
+                    <p class="paragraphText"></p>
+                    <div class="selections">
+                        <div class="selection active" >
+                            <img src="images/icon-arcade.svg" alt="arcade">
+                            <div class="plan-and-price">
+                                <h2>Arcade</h2>
+                                <p>$9/mo</p>
+                            </div>
+                        </div>
+                        <div class="selection"  >
+                            <img src="images/icon-advanced.svg" alt="arcade">
+                            <div class="plan-and-price">
+                                <h2>Advanced</h2>
+                                <p>$12/mo</p>
+                            </div>
+                        </div>
+                        <div class="selection" >
+                            <img src="images/icon-pro.svg" alt="arcade">
+                            <div class="plan-and-price">
+                                <h2>Pro</h2>
+                                <p>$15/mo</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="selections">
+                        <div class="selection active" style="height:183px">
+                            <img src="images/icon-arcade.svg" style="margin-bottom: 2.5rem;" alt="arcade">
+                            <div class="plan-and-price">
+                                <h2>Arcade</h2>
+                                <p>$90/yr</p>
+                                <p style="font-size:0.8rem; color:hsl(213, 96%, 18%)">2 month free</p>
+                            </div>
+                        </div>
+                        <div class="selection" style="height:183px" >
+                            <img src="images/icon-advanced.svg" style="margin-bottom: 2.5rem;" alt="arcade">
+                            <div class="plan-and-price">
+                                <h2>Advanced</h2>
+                                <p>$120/yr</p>
+                                <p style="font-size:0.8rem; color:hsl(213, 96%, 18%)">2 month free</p>
+                            </div>
+                        </div>
+                        <div class="selection" style="height:183px">
+                            <img src="images/icon-pro.svg" style="margin-bottom: 2.5rem; " alt="arcade">
+                            <div class="plan-and-price">
+                                <h2>Pro</h2>
+                                <p>$150/yr</p>
+                                <p style="font-size:0.8rem; color:hsl(213, 96%, 18%)">2 month free</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="toggle-block">
+                        <span class="monthly">Monthly</span>
+                        <div class="container">
+                            <input type="checkbox" class="checkbox" id="check" onclick="checkedvalidate()">
+                            <label for="check" class="button"></label>
+                        </div>
+                        <span class="yearly">Yearly</span>
+                    </div>
+                </div>
+                <a class="goback yearly-goback">Go Back</a>
+                <button id='submit-form' class="submit-form next-step yearly-nextstep" style="display:none">Next Step</button>
             </div>
             <div class="third-step">
             </div>
