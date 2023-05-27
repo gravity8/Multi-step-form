@@ -132,9 +132,9 @@ a{
     cursor: pointer;
 }
 .submit-form{
-    position: absolute;
-    right: 0;
-    bottom: -11.92vh;
+    position: fixed;
+    bottom:20vh;
+    right:14vw;
     width: 122px;
     height: 48px;
     background-color: hsl(213, 96%, 18%);
@@ -168,16 +168,15 @@ a{
     margin-bottom: 2.5rem;
 }
 .second-step .goback{
+
     display: none;
     color:hsl(231, 11%, 63%);
     cursor: pointer;
-    position: absolute;
-    left: 0;
-    bottom: -19vh;
+    position: fixed;
+    bottom: 22vh
+
 }
-.yearly-goback{
-    bottom: -16.2vh !important;
-}
+
 .second-step .goback:hover{
     color: hsl(213, 92%, 29%);
 }
@@ -223,11 +222,10 @@ a{
 
 }
 .next-step{
-    bottom:-21.02vh !important;
+    position: fixed;
+
 }
-.yearly-nextstep{
-    bottom:-18.18vh !important;
-}
+
 .container{
     width: 100px;
     height:50px;
@@ -270,6 +268,71 @@ a{
     background-color: hsl(231, 100%, 99%);
 
 }
+
+.third-step .diffArea1 h1{
+    color: var(--primary-text);
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+} 
+.third-step .diffArea1 p{
+    color: hsl(231, 11%, 63%);
+    margin-bottom: 2.5rem;
+}
+.third-step .diffArea1 .selections{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.third-step .diffArea1 .selection2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height:82px;
+    width: 450px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    padding-inline: 1rem;
+    position: relative;
+    transition: 0.3s ease;
+}
+.third-step .diffArea1 .selection2:hover{
+    border: 1.5px solid hsl(243, 100%, 62%) !important;
+    background-color:hsla(228, 100%, 84%, 0.131);
+}
+.adds-on-pricing{
+    font-size: .7rem;
+    margin:0 !important;
+    color: hsl(243, 100%, 62%) !important;
+    position: absolute;
+    right: 25px;
+}
+.third-step .diffArea1 .selection2 .addson-text h2{
+    font-size: .8rem;
+    font-weight: 500;
+    color:hsl(213, 96%, 18%);
+    margin: 0;
+    margin-bottom: 5px;
+}
+.third-step .diffArea1 .selection2 .addson-text p{
+    font-size: .7rem;
+    margin:0;
+}
+.fourth-step .diffArea2 h1{
+    color: var(--primary-text);
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+}
+.fourth-step .diffArea2 p {
+    color: hsl(231, 11%, 63%);
+    margin-bottom: 2.5rem;
+}
+.check-addson{
+    accent-color:hsl(243, 100%, 62%) ;
+}
+
 
 @media(max-width:470px){
     body{
@@ -340,7 +403,8 @@ a{
         padding-inline: 1rem;
     }
     .submit-form{
-        bottom: -35.2vh;
+        bottom:2vh;
+        right:5vw;
     }
     .form-space .first-step form span{
         position:absolute;
@@ -363,21 +427,18 @@ a{
         padding-top: 2px;
         margin-top: -2px;
     }
-    .second-step .goback{
-        position: absolute;
-        bottom:-11.6vh;
-    }
+
     .second-step .diffArea p{
         margin-bottom: 1.5rem;
     }
-    .yearly-goback{
-        bottom: -11.6vh !important;
-    }
+
     .next-step{
-        bottom:-13.16vh !important;
+        bottom:2vh;
+        right:5vw;
     }
-    .yearly-nextstep{
-        bottom:-13.16vh !important;
+    .goback{
+        bottom:4vh !important;
+        left:6vw;
     }
     .second-step .diffArea .selections{
         display: none;
@@ -403,7 +464,35 @@ a{
     .second-step .diffArea .selections .selection .plan-and-price h2{
         margin-top: .4rem;
     }
+    .third-step{
+        height: 384px;
+        width: 342px;
+        background-color: #fff;
+        border: transparent;
+        border-radius: 10px;
+        inset: 0 0 0 0;
+        margin: auto auto;
+        padding-inline:1.5rem;
+        padding-top: 2px;
+        margin-top: -2px;
+    }
+    .third-step .diffArea1 p{
+        margin-bottom: 1.5rem;
+    }
     .display-active{
         display:flex !important;
     }
+    .third-step .diffArea1 .selections .selection2{
+        height:60px;
+        width:294px;
+    }
 }
+/* .fixed-controls{
+    position:static;
+    bottom: 20vh;
+}
+.controls-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+} */
